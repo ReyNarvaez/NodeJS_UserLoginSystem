@@ -6,4 +6,20 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'Register' });
+});
+
+router.post('/register', function(req, res, next) {
+	console.log("submited register");
+});
+
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Login' });
+});
+
+router.post('/login', function(req, res, next) {
+	console.log("submited login");
+});
+
 module.exports = router;
