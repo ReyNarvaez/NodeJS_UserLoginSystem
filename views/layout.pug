@@ -24,6 +24,7 @@ html
           li.nav-item
             a.nav-link(href='/users/logout') Logout
     main(role='main')
+      != messages()
       block content
     footer.container
       p(class='text-center') © Company 2017-2018
