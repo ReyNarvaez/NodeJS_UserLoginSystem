@@ -65,6 +65,12 @@ app.use(function(req,res,next){
 	next();
 })
 
+//GLOBAL USER VARIABLE
+app.get('*', function(req, res, next){
+	res.locals.user = req.user || null;
+	next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
