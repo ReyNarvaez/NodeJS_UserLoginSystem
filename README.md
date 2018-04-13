@@ -8,6 +8,7 @@ User Login System Implemented in NodeJS
 * pug 2.0.3
 * bootstrap 4.0
 * mongoDB 3.6.3
+* mongoose 5.0.13
 * passport 0.4.0
 * multer 1.3.0
 * bcryptjs 2.4.3
